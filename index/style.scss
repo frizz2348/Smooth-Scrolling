@@ -12,8 +12,8 @@ body {
     background: $body-color;
     color: $text-color ;
     line-height: 1.6;
-    height: 100vw;
-    overflowX: hidden;
+    height: 100%;
+    overflow: hidden;
 
 }
 
@@ -21,6 +21,9 @@ body {
     width: 100%;
     height: 100%;
     /* CSS smooth scroll properties. */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 .navbar {
@@ -60,7 +63,8 @@ section {
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 100vw;
+    height: 100%;
+    scroll-snap-align: center;
     h1 {
         font-size: 4rem;
     }
@@ -69,15 +73,15 @@ section {
     }
 
     &#home {
-        background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;
+        background: url('images/img1.jpg') no-repeat center center/cover;
     }
     &#about {
-        background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;
+        background: url('images/img2.jpg') no-repeat center center/cover;
     }
     &#service {
-        background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;
+        background: url('images/img3.jpg') no-repeat center center/cover;
     }
     &#contact {
-        background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;
+        background: url('images/img4.jpg') no-repeat center center/cover;
     }
 }
